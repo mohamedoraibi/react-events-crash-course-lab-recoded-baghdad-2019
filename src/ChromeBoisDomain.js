@@ -14,6 +14,15 @@ export default class ChromeBoisDomain extends Component {
     toggleCycling();
   }
   
+   handleKey = (e) => {
+    if(e.key === 'tap on a'){
+      resize('+');
+    }
+    else if(e.key === 'tap on s'){
+      resize('-');
+    }
+  }
+  
   render() {
     return (
       <canvas 
