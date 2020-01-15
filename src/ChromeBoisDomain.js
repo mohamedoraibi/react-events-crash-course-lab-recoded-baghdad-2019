@@ -10,7 +10,9 @@ export default class ChromeBoisDomain extends Component {
 <drawChromeBoiAtCoords  x=event.screenX y=event.screenY />
   }
   
-  
+  handleClick = (e) => {
+    toggleCycling();
+  }
   
   render() {
     return (
